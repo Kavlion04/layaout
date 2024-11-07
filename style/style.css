@@ -1,0 +1,262 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    background: linear-gradient(#b46703, #e00dbd, #2005ef);
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    color: #121619;
+    text-align: center;
+
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.container .description {
+    font-family: "Poppins", sans-serif;
+    font-size: 46px;
+    font-weight: 600;
+    color: #0055FF;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px;
+
+}
+
+.grid-content {
+    background-color: #ffffff;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.grid-img img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.5);
+}
+
+.grid-content .icon {
+    position: absolute;
+    top: 120px;
+    left: 60%;
+    cursor: pointer;
+}
+.icon:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+   
+}
+.grid-content b {
+    color: #121619;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.grid-content p {
+    color: #4D5358;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+.btn {
+    background-color: #0055FF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: end;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+    left: 1280px;
+
+}
+.btn:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.5);
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr),) repeat(14, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas: 
+    "header header header header header"
+    "aside main main main figure"
+    "aside main main main figure"   
+    "aside2 main main main figure2"
+    "aside2 main main main figure2"
+    "footer footer footer footer figure2";
+
+
+}
+.grid-content2 {
+    background-color: #e96b6b;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.grid-content2:nth-child(1){
+    grid-area: header;
+    background-color: #78C2A8;
+    
+}
+
+.grid-content2:nth-child(2){
+    grid-area: aside;
+    background-color: #6193F4;
+}
+.grid-content2:nth-child(3){
+    grid-area: aside2;
+    background-color: #6193F4;
+}
+.grid-content2:nth-child(4){
+    grid-area: main;
+    background-color: #9061F4;
+}
+.grid-content2:nth-child(5){
+    grid-area: figure;
+    background-color: #F46161;
+}
+.grid-content2:nth-child(6){
+    grid-area: figure2;
+    background-color: #F46161;
+}
+
+.grid-content2:nth-child(7){
+    grid-area: footer;
+    background-color: #F4B161;
+}
+.grid-container3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr),) repeat(14, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    grid-template-areas: 
+    "header header header header header header header "
+    "aside aside aside aside aside2 aside2 aside2"
+    "aside aside aside aside aside2 aside2 aside2"
+    "aside aside aside aside aside2 aside2 aside2"
+    "aside aside aside aside figure2 figure2 figure2"
+    "main main main main2 main2 main2 main2"
+    "main main main main2 main2 main2 main2"
+    "main main main main2 main2 main2 main2"
+    "figure figure figure figure figure figure3 figure3"
+    "figure figure figure figure figure figure3 figure3"
+    "figure figure figure figure figure figure3 figure3"
+    "figure figure figure figure figure figure3 figure3"
+    "figure figure figure figure figure footer footer"
+    "figure figure figure figure figure footer footer"
+    
+   
+    
+    ;
+
+}
+.grid-content3 {
+    background-color: #7E7E7E;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+}
+.grid-content3:nth-child(1) {
+    grid-area: header;
+}
+.grid-content3:nth-child(2) {   
+    grid-area: aside;
+}
+.grid-content3:nth-child(3) {
+    grid-area: aside2;
+}
+.grid-content3:nth-child(4) {
+    grid-area: main;
+    border-radius: 100px;
+}
+.grid-content3:nth-child(5) {
+    grid-area: figure;
+}
+.grid-content3:nth-child(6) {
+    grid-area: figure2;
+}
+.grid-content3:nth-child(7) {
+    grid-area: figure3;
+    height: 200px;
+}
+.grid-content3:nth-child(8) {
+    grid-area: main2;
+}
+.grid-content3:nth-child(9) {
+    grid-area: footer;
+    height: 100px;
+}
+.grid-content3:nth-child(9) .btn {
+    position: relative;
+    z-index: 10;
+    left: 170px;
+
+}
+
+
+
+
+
+
